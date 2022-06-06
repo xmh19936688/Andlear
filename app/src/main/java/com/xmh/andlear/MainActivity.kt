@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
                 clear()
 
                 binding.btnClear.post {
-                    binding.btnClear.isEnabled = true
                     AlertDialog.Builder(this@MainActivity)
                         .setMessage("Android clear finish!")
                         .setPositiveButton("确定") { dia: DialogInterface, i: Int ->
@@ -46,6 +45,7 @@ class MainActivity : AppCompatActivity() {
                         }
                         .create()
                         .show()
+                    binding.btnClear.isEnabled = true
                 }
             }
 
