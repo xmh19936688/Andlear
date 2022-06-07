@@ -28,5 +28,5 @@ jobs:
     - name: Upload apk
       uses: actions/upload-artifact@v3.1.0
       with:
-        name: upload apk
+        name: andlear-apk
         path: ${{github.workspace}}/app/build/outputs/apk/release/*.apk
